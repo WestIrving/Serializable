@@ -18,19 +18,19 @@ public class TestPeople {
 		
 		try {
 			//将对象存入文件中
-//			ObjectOutputStream oos=new ObjectOutputStream(new FileOutputStream(file));
-//			
-//			People p1=new People(1001, "张三", "男");
-//			People p2=new People(1002, "李四", "男");
-//			People p3=new People(1003, "王五", "男");
+			ObjectOutputStream oos=new ObjectOutputStream(new FileOutputStream(file));
+			
+			People p1=new People(1001, "张三", "男");
+			People p2=new People(1002, "李四", "男");
+			People p3=new People(1003, "王五", "男");
 			ArrayList list=new ArrayList();
-//			
-//			list.add(p1);
-//			list.add(p2);
-//			list.add(p3);
-//			oos.writeObject(list); //将对象写入File中
-//			
-//			oos.close();
+			
+			list.add(p1);
+			list.add(p2);
+			list.add(p3);
+			oos.writeObject(list); //将对象写入File中
+			
+			oos.close();
 			
 			//将对象从文件中读出
 			ObjectInputStream ois=new ObjectInputStream(new FileInputStream(file));
